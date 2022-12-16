@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    padding: 12px;
+}
+
+.cadastrar-endereco,
+.observacao,
+.cadastrar-usuario {
+    width: max-content;
+    margin-inline: auto;
+    position: relative;
+}
+
+.cadastrar-usuario div,
+.cadastrar-endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastrar-usuario h2,
+.cadastrar-endereco h2 {
+    font-size: 36px;
+    margin-block: 16px;
+}
+
+.cadastrar-usuario img,
+.cadastrar-endereco img {
+    margin-bottom: 64px;
+
+}
+
+.cadastrar-usuario label,
+.cadastrar-usuario input[type="text"] {
+    display: block;
+}
+
+.cadastrar-usuario label {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #299FCF;
+}
+
+nav .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul li:hover {
+    opacity: .5;
+    transition: opacity .4s;
+}
+
+input[type="text"] {
+    background-color: #eee;
+    border: none;
+
+    border-radius: 8px;
+
+    width: 280px;
+    height: 32px;
+
+    margin-bottom: 32px;
+}
+
+.button-submit {
+    font-size: 16px;
+    border-radius: 6px;
+
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    background-color: #669921;
+
+    padding: 8px 16px;
+
+
+    position: absolute;
+    right: 0;
+}
+
+.button-submit:hover {
+    transition: ease-in .2s;
+    opacity: .6;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 12px;
+}
+
+.cadastrar-endereco {
+    margin-bottom: 64px;
+}
+
+.cadastrar-endereco span,
+.observacao span {
+    color: #FA8B28;
+}
+
+.cadastrar-endereco input[type="submit"] {
+    bottom: -32px;
+}
+
+.cadastrar-endereco>div,
+.observacao>div {
+    text-align: center;
+}
+
+.cadastrar-endereco form div {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+}
+
+.cadastrar-endereco form label {
+    margin-top: -32px;
+}
+
+.observacao {
+    margin-bottom: 100px;
+}
+
+.observacao h2 {
+    margin-bottom: 12px;
+}
+
+.observacao label {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+
+    margin-top: 72px;
+    margin-bottom: 12px;
+}
+
+.observacao textarea {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+
+    background-color: #eee;
+    border: none;
+    border-radius: 12px;
+
+    margin-bottom: 32px;
+}
+
+.observacao>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pedido-pizza {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 32px;
+    margin-block: 64px;
+
+}
+
+.pedido-pizza .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eee;
+    border-radius: 12px;
+
+    width: 300px;
+    height: 300px;
+}
+
+.pedido-pizza .card:hover {
+    background-color: #ccc;
+    transition: ease .3s;
+}
+
+.pedido-pizza input[type="number"] {
+    width: 64px;
+    height: 24px;
+
+    border: none;
+    border-radius: 4px
+}
+
+.pedido-pizza .card img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+.pedido-pizza .sobre div {
+    display: grid;
+    grid-template-columns: 112px 175px;
+    margin-bottom: 12px;
+}
+
+.pedido-pizza span {
+    font-size: 20px;
+}
+
+.pedido-pizza .card input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.pedido-pizza .card input[type="checkbox"]:before {
+    content: "";
+    position: relative;
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #FA8B28;
+}
+
+.pedido-pizza .card input[type="checkbox"]:after {
+    content: "";
+    position: relative;
+    display: block;
+
+}
+
+.pedido-pizza .card input[type="checkbox"]:checked:before {
+    background-color: #669921;
+    background-image: url(../img/ok.svg);
+}
